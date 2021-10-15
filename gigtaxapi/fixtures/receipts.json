@@ -1,0 +1,28 @@
+[
+    {
+        "model": "gigtaxapi.receipt",
+        "pk": 1,
+        "fields": {
+            "musician": 1,
+            "business_name": "Guitar Center",
+            "business_address": "29555 Northwestern Hwy, Southfield, MI, 48034",
+            "description": "Tama snare drum",
+            "date": "2021-01-20",
+            "price": 279.99,
+            "receipt_number": "333111111111111"
+        }
+    },
+    {
+        "model": "gigtaxapi.receipt",
+        "pk": 2,
+        "fields": {
+            "musician": 1,
+            "business_name": "Forks Drum Closet",
+            "business_address": "308 Chestnut St,Nashville,TN,37210",
+            "description": "Drum sticks",
+            "date": "2021-06-05",
+            "price": 60,
+            "receipt_number": "111212321"
+        }
+    }
+]

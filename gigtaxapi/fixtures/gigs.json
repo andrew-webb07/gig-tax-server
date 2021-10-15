@@ -1,0 +1,30 @@
+[
+    {
+        "model": "gigtaxapi.gig",
+        "pk": 1,
+        "fields": {
+            "musician": 1,
+            "artist": "Relentless Flood",
+            "location_name": "EXIT/IN",
+            "location_address": "2208 Elliston Pl, Nashville, TN, 37210",
+            "gig_description": "rock show",
+            "date": "2021-06-03",
+            "gig_pay": 100,
+            "mileage": 53
+        }
+    },
+    {
+        "model": "gigtaxapi.gig",
+        "pk": 2,
+        "fields": {
+            "musician": 2,
+            "artist": "The Lost Saints",
+            "location_name": "Dark Horse Studio",
+            "location_address": "2465 Old Charlotte Pike, Franklin, TN, 37064",
+            "gig_description": "Recorded 3 songs",
+            "date": "2021-03-04",
+            "gig_pay": 350,
+            "mileage": 45
+        }
+    }
+]
