@@ -1,0 +1,18 @@
+[
+    {
+        "model": "gigtaxapi.musician",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "address": "4959 Main St, Spring Hill, TN 37174"
+        }
+    },
+    {
+        "model": "gigtaxapi.musician",
+        "pk": 2,
+        "fields": {
+            "user": 2,
+            "address": "4726 Traders Way, Thompson's Station, TN 37179"
+        }
+    }
+]

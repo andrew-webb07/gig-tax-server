@@ -1,0 +1,38 @@
+[
+    {
+        "model": "gigtaxapi.tour",
+        "pk": 1,
+        "fields": {
+            "musician": 1,
+            "artist": "Reyna Roberts",
+            "tour_departure_address": "1101 Cherry Ave, Nashville, TN, 37203",
+            "tour_description": "Jamey Johnson Tour",
+            "number_of_gigs": 7,
+            "per_diem": 25,
+            "travel_days": 4,
+            "travel_day_pay": 50,
+            "date_start": "2021-07-08",
+            "date_end": "2021-07-19",
+            "tour_gig_pay": 150,
+            "mileage": 52
+        }
+    },
+    {
+        "model": "gigtaxapi.tour",
+        "pk": 2,
+        "fields": {
+            "musician": 2,
+            "artist": "Plumb",
+            "tour_departure_address": "555 Broadway, Nashville, TN, 37021",
+            "tour_description": "Plumb Tour",
+            "number_of_gigs": 5,
+            "per_diem": 15,
+            "travel_days": 2,
+            "travel_day_pay": 25,
+            "date_start": "2021-03-20",
+            "date_end": "2021-03-27",
+            "tour_gig_pay": 75,
+            "mileage": 65
+        }
+    }
+]
