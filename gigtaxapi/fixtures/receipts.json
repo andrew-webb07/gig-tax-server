@@ -24,5 +24,18 @@
             "price": 60,
             "receipt_number": "111212321"
         }
+    },
+    {
+        "model": "gigtaxapi.receipt",
+        "pk": 3,
+        "fields": {
+            "musician": 2,
+            "business_name": "Mars Music",
+            "business_address": "29281 Southfield Rd, Southfield, MI 48076",
+            "description": "Tama Iron Cobra Pedal",
+            "date": "2020-04-10",
+            "price": 279.99,
+            "receipt_number": "5555"
+        }
     }
 ]
