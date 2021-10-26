@@ -17,12 +17,13 @@ from django.contrib import admin
 from django.conf.urls import include
 from django.urls import path
 from rest_framework import routers
-from gigtaxapi.views import register_user, login_user, GigView, ReceiptView
+from gigtaxapi.views import register_user, login_user, GigView, ReceiptView, TourView
 
 # route the URL to the proper viewset and add a new URL mapping to the default router
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'gigs', GigView, 'gig')
 router.register(r'receipts', ReceiptView, 'receipt')
+router.register(r'tours', TourView, 'tour')
 
 urlpatterns = [
     path('register', register_user),
