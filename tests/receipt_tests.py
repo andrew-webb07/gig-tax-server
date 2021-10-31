@@ -44,7 +44,7 @@ class ReceiptTests(APITestCase):
             "description": "Double Bass Pedal",
             "date": "2021-07-01",
             "price": 379.99,
-            "receiptNumber": 3331212121
+            "receiptNumber": "3331212121"
         }
 
         # Make sure request is authenticated
@@ -78,7 +78,7 @@ class ReceiptTests(APITestCase):
         receipt.description = "Tama Rockstar Receipt"
         receipt.date = "2003-07-01"
         receipt.price = 599.99
-        receipt.receipt_number = 121212121
+        receipt.receipt_number = "121212121"
         receipt.save()
 
         # Make sure request is authenticated
@@ -112,7 +112,7 @@ class ReceiptTests(APITestCase):
         receipt.description = "Tama Rockstar Receipt"
         receipt.date = "2003-07-01"
         receipt.price = 599.99
-        receipt.receipt_number = 121212121
+        receipt.receipt_number = "121212121"
         receipt.save()
 
         # DEFINE NEW PROPERTIES FOR RECEIPT
@@ -123,7 +123,7 @@ class ReceiptTests(APITestCase):
             "description": "Double Bass Pedal",
             "date": "2021-07-01",
             "price": 379.99,
-            "receiptNumber": 3331212121
+            "receiptNumber": "3331212121"
         }
 
         self.client.credentials(HTTP_AUTHORIZATION='Token ' + self.token)
@@ -155,7 +155,7 @@ class ReceiptTests(APITestCase):
         receipt.description = "Tama Rockstar Receipt"
         receipt.date = "2003-07-01"
         receipt.price = 599.99
-        receipt.receipt_number = 121212121
+        receipt.receipt_number = "121212121"
         receipt.save()
 
         self.client.credentials(HTTP_AUTHORIZATION='Token ' + self.token)
