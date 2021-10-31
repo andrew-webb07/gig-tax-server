@@ -22,7 +22,11 @@
             "description": "Drum sticks",
             "date": "2021-06-05",
             "price": 60,
+<<<<<<< HEAD
             "receipt_number": "1112123"
+=======
+            "receipt_number": "11121221"
+>>>>>>> main
         }
     },
     {
