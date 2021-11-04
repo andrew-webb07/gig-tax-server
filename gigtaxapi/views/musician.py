@@ -32,6 +32,11 @@ class MusicianView(ViewSet):
         """
         musicians = Musician.objects.all()
 
+        search_text = self.request.query_params.get('q', None)
+
+        if search_text is not None:
+            musicians = musicians.filter(user__email=search_text)
+
         serializer = MusicianSerializer(
             musicians, many=True, context={'request': request})
         return Response(serializer.data)
