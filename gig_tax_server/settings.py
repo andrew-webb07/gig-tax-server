@@ -91,7 +91,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'gig-tax-server.wsgi.application'
+WSGI_APPLICATION = 'gig_tax_server.wsgi.application'
 
 
 # Database
