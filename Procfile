@@ -1,1 +1,1 @@
-web: gunicorn gig_tax_server.wsgi --log-file -
+web: gunicorn gig-tax-server.wsgi --log-file -
