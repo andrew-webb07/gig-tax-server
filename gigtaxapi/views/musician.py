@@ -5,6 +5,7 @@ from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers
 from gigtaxapi.models import Musician
+from django.db.models import Q
 
 class MusicianView(ViewSet):
     """Practice Plan Musicians"""
@@ -16,7 +17,8 @@ class MusicianView(ViewSet):
         """
         try:
 
-            musician = Musician.objects.get(pk=pk)
+            musician = Musician.objects.get(Q(pk=pk) & Q(user=request.auth.user))
+
             serializer = MusicianSerializer(musician, context={'request': request})
             return Response(serializer.data)
 
