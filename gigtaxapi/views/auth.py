@@ -19,12 +19,14 @@ def login_user(request):
     password = request.data['password']
 
     authenticated_user = authenticate(username=username, password=password)
+    musician = Musician.objects.get(user=request.auth.user)
 
     if authenticated_user is not None:
         token = Token.objects.get(user=authenticated_user)
         data = {
             'valid': True,
-            'token': token.key
+            'token': token.key,
+            'address': musician.address
         }
         return Response(data)
     else:
@@ -54,5 +56,6 @@ def register_user(request):
     )
 
     token = Token.objects.create(user=musician.user)
-    data = { 'token': token.key }
+    data = { 'token': token.key,
+            'address': musician.address }
     return Response(data, status=status.HTTP_201_CREATED)
