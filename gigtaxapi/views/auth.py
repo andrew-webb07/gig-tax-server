@@ -19,10 +19,10 @@ def login_user(request):
     password = request.data['password']
 
     authenticated_user = authenticate(username=username, password=password)
-    musician = Musician.objects.get(user=authenticated_user)
 
     if authenticated_user is not None:
         token = Token.objects.get(user=authenticated_user)
+        musician = Musician.objects.get(user=authenticated_user)
         data = {
             'valid': True,
             'token': token.key,
