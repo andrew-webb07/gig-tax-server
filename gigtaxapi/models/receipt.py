@@ -8,4 +8,4 @@ class Receipt(models.Model):
     description = models.CharField(max_length=150)
     date = models.DateField(auto_now=False, auto_now_add=False)
     price = models.FloatField()
-    receipt_number = models.IntegerField()
+    receipt_number = models.BigIntegerField()
