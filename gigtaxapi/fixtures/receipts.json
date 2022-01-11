@@ -9,7 +9,8 @@
             "description": "Tama snare drum",
             "date": "2021-01-20",
             "price": 279.99,
-            "receipt_number": "333111111111111"
+            "receipt_number": "333111111111111",
+            "category": 1
         }
     },
     {
@@ -22,7 +23,8 @@
             "description": "Drum sticks",
             "date": "2021-06-05",
             "price": 60,
-            "receipt_number": "11121221"
+            "receipt_number": "11121221",
+            "category": 1
         }
     },
     {
@@ -35,7 +37,8 @@
             "description": "Tama Iron Cobra Pedal",
             "date": "2020-04-10",
             "price": 279.99,
-            "receipt_number": "5555"
+            "receipt_number": "5555",
+            "category": 1
         }
     }
 ]

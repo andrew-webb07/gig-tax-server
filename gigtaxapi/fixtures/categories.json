@@ -1,0 +1,37 @@
+[
+    {
+        "model": "gigtaxapi.category",
+        "pk": 1,
+        "fields": {
+            "label": "Supplies (gear)"
+        }
+    },
+    {
+        "model": "gigtaxapi.category",
+        "pk": 2,
+        "fields": {
+            "label": "Repairs & Maintenance"
+        }
+    },
+    {
+        "model": "gigtaxapi.category",
+        "pk": 3,
+        "fields": {
+            "label": "Equipment Rent"
+        }
+    },    
+    {
+        "model": "gigtaxapi.category",
+        "pk": 4,
+        "fields": {
+            "label": "Other Rent"
+        }
+    },
+    {
+        "model": "gigtaxapi.category",
+        "pk": 5,
+        "fields": {
+            "label": "Other"
+        }
+    }
+]
