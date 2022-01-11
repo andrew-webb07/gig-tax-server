@@ -9,3 +9,4 @@ class Receipt(models.Model):
     date = models.DateField(auto_now=False, auto_now_add=False)
     price = models.FloatField()
     receipt_number = models.BigIntegerField()
+    category = models.ForeignKey("Category", null=True, on_delete=models.SET_NULL)
