@@ -8,7 +8,7 @@ from rest_framework import status
 from gigtaxapi.models import Category
 
 class CategoryView(ViewSet):
-    """Rare Categories"""
+    """Gig Tax Categories"""
 
     def retrieve(self, request, pk=None):
         """Handle GET requests for single category
