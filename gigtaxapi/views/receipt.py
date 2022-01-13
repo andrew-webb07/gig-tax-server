@@ -27,7 +27,7 @@ class ReceiptView(ViewSet):
         receipt.price = request.data["price"]
         receipt.receipt_number = request.data["receiptNumber"]
 
-        receipt.category = Category.objects.get(pk=request.data["category"])
+        receipt.category_type = Category.objects.get(pk=request.data["category"])
 
         try:
             receipt.save()
@@ -69,7 +69,7 @@ class ReceiptView(ViewSet):
         receipt.date = request.data["date"]
         receipt.price = request.data["price"]
         receipt.receipt_number = request.data["receiptNumber"]
-        receipt.category = Category.objects.get(pk=request.data["category"])
+        receipt.category_type = Category.objects.get(pk=request.data["category"])
         receipt.save()
 
         return Response({}, status=status.HTTP_204_NO_CONTENT)
