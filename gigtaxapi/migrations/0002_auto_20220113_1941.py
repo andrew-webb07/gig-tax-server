@@ -11,6 +11,13 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
+        migrations.CreateModel(
+            name='Category',
+            fields=[
+                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('label', models.CharField(max_length=50)),
+            ],
+        ),
         migrations.AddField(
             model_name='receipt',
             name='category_type',
