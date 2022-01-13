@@ -5,11 +5,11 @@ from django.http import HttpResponseServerError
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers
-from gigtaxapi.models import Receipt, Musician
+from gigtaxapi.models import Receipt, Musician, Category
 from django.db.models import Q
 
 class ReceiptView(ViewSet):
-    """Receipt Tax Receipts"""
+    """Gig Tax Receipts"""
 
     def create(self, request):
         """Handle POST operations for a receipt
@@ -26,6 +26,8 @@ class ReceiptView(ViewSet):
         receipt.date = request.data["date"]
         receipt.price = request.data["price"]
         receipt.receipt_number = request.data["receiptNumber"]
+
+        receipt.category = Category.objects.get(pk=request.data["category"])
 
         try:
             receipt.save()
@@ -67,6 +69,7 @@ class ReceiptView(ViewSet):
         receipt.date = request.data["date"]
         receipt.price = request.data["price"]
         receipt.receipt_number = request.data["receiptNumber"]
+        receipt.category = Category.objects.get(pk=request.data["category"])
         receipt.save()
 
         return Response({}, status=status.HTTP_204_NO_CONTENT)

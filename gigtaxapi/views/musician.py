@@ -8,7 +8,7 @@ from gigtaxapi.models import Musician
 from django.db.models import Q
 
 class MusicianView(ViewSet):
-    """Practice Plan Musicians"""
+    """Gig Tax Musicians"""
 
     def retrieve(self, request, pk=None):
         """Handle GET requests for single musician
