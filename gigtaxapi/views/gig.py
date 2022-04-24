@@ -9,7 +9,7 @@ from gigtaxapi.models import Gig, Musician
 from django.db.models import Q
 
 class GigView(ViewSet):
-    """Gig Tax Gigs"""
+    """Gig Tax Gigs """
 
     def create(self, request):
         """Handle POST operations for a gig
