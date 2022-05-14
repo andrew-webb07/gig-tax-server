@@ -12,7 +12,7 @@ class ReceiptView(ViewSet):
     """Gig Tax Receipts"""
 
     def create(self, request):
-        """Handle POST operations for a receipt 
+        """Handle POST operations for a receipt
         Returns:
             Response -- JSON serialized receipt instance
         """
