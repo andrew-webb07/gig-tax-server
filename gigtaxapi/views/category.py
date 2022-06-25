@@ -30,14 +30,14 @@ class CategoryView(ViewSet):
             Response -- JSON serialized list of categorys
         """
 
-        categorys = Category.objects.all()
+        categories = Category.objects.all()
 
         serializer = CategorySerializer(
-            categorys, many=True, context={'request': request})
+            categories, many=True, context={'request': request})
         return Response(serializer.data)
 
 class CategorySerializer(serializers.ModelSerializer):
-    """JSON serializer for categorys
+    """JSON serializer for categories
 
     Arguments:
         serializer type
