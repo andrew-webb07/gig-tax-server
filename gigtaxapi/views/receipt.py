@@ -14,7 +14,7 @@ class ReceiptView(ViewSet):
     def create(self, request):
         """Handle POST operations for a receipt purchase
         Returns:
-            Response -- JSON serialized receipt instance
+            Response -- JSON serialized receipt instance 
         """
         musician = Musician.objects.get(user=request.auth.user)
 
